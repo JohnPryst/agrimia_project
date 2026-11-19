@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AGRI-MIA | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset body/main margins so full-width sections touch both edges */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f4fbf4 0%, #ffffff 100%);
+        }
+        main, article {
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+            border-bottom: 4px solid #66BB6A;
+            padding: 30px 0 20px 0;
+            box-shadow: 0 4px 15px rgba(27, 94, 32, 0.08);
+            text-align: center;
+        }
+        .image1 {
+            box-shadow: 0 12px 28px rgba(27, 94, 32, 0.2);
+            border: 3px solid #A5D6A7;
+            border-radius: 25px;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .image1:hover {
+            transform: scale(1.03);
+        }
+
+        /* Full-Width Hero Slideshow */
+        #agriSlider.hero-slideshow {
+            position: relative;
+            width: 100%;
+            height: 560px;
+            background-color: #143d18;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        #agriSlider.hero-slideshow img.slide-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            object-position: center 15%;
+            border-radius: 0;
+            opacity: 0;
+            transition: opacity 1.2s ease-in-out;
+            z-index: 1;
+            pointer-events: none;
+        }
+        #agriSlider.hero-slideshow img.slide-img.active {
+            opacity: 1;
+            z-index: 2;
+        }
+
+        /* Text Strip Anchored at the Bottom */
+        .slide-bottom-text {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            background: rgba(13, 48, 16, 0.88);
+            color: #ffffff;
+            padding: 16px 28px;
+            box-sizing: border-box;
+            text-align: center;
+            border-top: 3px solid #66BB6A;
+        }
+        .slide-bottom-text h2 {
+            margin: 0 0 6px 0;
+            font-size: 22px;
+            color: #E8F5E9;
+        }
+        .slide-bottom-text p {
+            margin: 0;
+            font-size: 15px;
+            color: #ffffff;
+        }
+
+        .promise-section {
+            max-width: 960px;
+            margin: 25px auto;
+            padding: 20px 28px;
+            background: #ffffff;
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(27, 94, 32, 0.08);
+            box-sizing: border-box;
+        }
+
+        nav {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .action-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            box-shadow: 0 6px 16px rgba(27, 94, 32, 0.25);
+            transition: all 0.3s ease;
+        }
+        .action-btn:hover {
+            background: linear-gradient(135deg, #66BB6A 0%, #4CAF50 100%);
+            color: #1B5E20;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 187, 106, 0.4);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #1B5E20 0%, #0d3010 100%);
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.1);
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/TM.jpeg" alt="Agri-Mia Logo" class="image1" style="width:400px; height:150px; border-radius:30px;">
+        <h1 style="margin-top:10px; color:#1B5E20; font-size:48px;">AGRI-MIA CORPORATION LIMITED</h1>
+        <nav style="margin-top:25px;">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="contact.html">CONTACT US</a>
+            <a href="customer.php">MARKETPLACE</a>
+            <a href="login.php">LOGIN</a>
+            <a href="register.php">REGISTER</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="hero-slideshow" id="agriSlider">
+                <!-- Background Transitioning Images -->
+                <img src="images/agr1.png" alt="Farm Produce 1" class="slide-img active">
+                <img src="images/agr2.png" alt="Farm Produce 2" class="slide-img">
+                <img src="images/agr4.png" alt="Farm Produce 3" class="slide-img">
+                <img src="images/agr6.png" alt="Farm Produce 4" class="slide-img">
+
+                <!-- Text Anchored at the Bottom of the Slideshow -->
+                <div class="slide-bottom-text" id="slideCaption">
+                    <h2 id="captionTitle">Fresh Harvest Direct from Local Farmers</h2>
+                    <p id="captionDesc">Quality agricultural products from farm to doorstep with no middlemen.</p>
+                </div>
+            </div>
+
+            <section class="promise-section">
+				<h2 style="text-align:center; font-family:algerian;ss">YOUR DIGITAL MARKET</h2>
+                <h2 style="color:#1B5E20; font-size:28px; text-align:center; margin-top:0;">WE LINK THE BUYER WITH THE SELLER — NO STRAIN, JUST ORDER</h2>
+                <p style="margin:10px 0; font-size:17px;"><strong>Customer:</strong> Don't worry about where to spend — we connect you directly with verified local farmers.</p>
+                <p style="margin:10px 0; font-size:17px;"><strong>Farmer:</strong> Don't worry about the market — post your harvest and reach buyers immediately.</p>
+                <div style="text-align:center;">
+                    <a href="customer.php" class="action-btn">EXPLORE MARKETPLACE</a>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p><b>Email: agrimia@gmail.com | Tel: +256 7758968</b></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slides = document.querySelectorAll('#agriSlider img.slide-img');
+            const captionTitle = document.getElementById('captionTitle');
+            const captionDesc = document.getElementById('captionDesc');
+
+            const captions = [
+                {
+                    title: "Fresh Harvest Direct from Local Farmers",
+                    desc: "Quality agricultural products from farm to doorstep with no middlemen."
+                },
+                {
+                    title: "Trusted Supply for Buyers & Businesses",
+                    desc: "Order reliable produce directly from verified sellers across Uganda."
+                },
+                {
+                    title: "Better Market Access for Farmers",
+                    desc: "List your harvest easily and connect with active buyers without delay."
+                },
+                {
+                    title: "No Hustle, Just Order",
+                    desc: "Simple, direct connections between local growers and everyday buyers."
+                }
+            ];
+
+            let currentSlide = 0;
+
+            if (slides.length > 1) {
+                setInterval(() => {
+                    slides[currentSlide].classList.remove('active');
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add('active');
+
+                    if (captions[currentSlide]) {
+                        captionTitle.textContent = captions[currentSlide].title;
+                        captionDesc.textContent = captions[currentSlide].desc;
+                    }
+                }, 3500);
+            }
+        });
+    </script>
+</body>
+</html>

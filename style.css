@@ -1,0 +1,188 @@
+/* ==========================================================
+   AGRI-MIA STYLING SYSTEM (Color Hunt Palette)
+   #E8F5E9 (Light Mint), #A5D6A7 (Soft Sage), 
+   #66BB6A (Medium Green), #1B5E20 (Dark Forest)
+   ========================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f9f4;
+    color: #1B5E20;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #E8F5E9 0%, #A5D6A7 100%);
+    padding: 25px 0 15px 0;
+    border-bottom: 4px solid #66BB6A;
+    box-shadow: 0 4px 12px rgba(27, 94, 32, 0.08);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    background-color: #1B5E20;
+    padding: 12px 0;
+    margin-top: 15px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 16px;
+    color: #ffffff;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #66BB6A;
+    color: #1B5E20;
+    transform: translateY(-2px);
+}
+
+main {
+    margin: 40px auto;
+    padding: 0 20px;
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+aside {
+    flex: 1;
+    background-color: #ffffff;
+    border: 2px solid #A5D6A7;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+article {
+    flex: 2;
+    background-color: #ffffff;
+    border: 2px solid #A5D6A7;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+section {
+    flex: 1;
+    background-color: #ffffff;
+    border: 2px solid #A5D6A7;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+form {
+    background-color: #E8F5E9;
+    border: 2px solid #A5D6A7;
+    width: 100%;
+    max-width: 440px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(27, 94, 32, 0.1);
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+    color: #1B5E20;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 16px 0;
+    border: 1.5px solid #A5D6A7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #1B5E20;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+}
+
+button {
+    background-color: #1B5E20;
+    color: #ffffff;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #66BB6A;
+    color: #1B5E20;
+    transform: translateY(-2px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+th, td {
+    border: 1px solid #e0f2f1;
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #1B5E20;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fbf9;
+}
+
+tr:hover {
+    background-color: #f1f8f1;
+}
+
+footer {
+    text-align: center;
+    background-color: #1B5E20;
+    color: #E8F5E9;
+    padding: 25px;
+    margin-top: 60px;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.05);
+}
